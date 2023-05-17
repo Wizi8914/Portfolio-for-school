@@ -1,4 +1,5 @@
 window.addEventListener('load', function() {
+    this.window.scrollTo(0, 0);
     setTimeout(function() {
         var monElement = document.querySelector('.next-page-button');
         monElement.style.display = 'block';
