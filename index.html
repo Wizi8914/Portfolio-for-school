@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="scss/style.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="scss/first-ctn.css" />
+	<link rel="stylesheet" href="scss/second-ctn.css" />
 	<title>Loick Konieczny</title>
 </head>
-<body>
 
-	<div class="first-container">
+<body>
+	<div style="display: none" class="first-container">
 		<p class="line typing-name">loick Konieczny</p>
 		<a onclick="nextPage()" class="next-page-button">
 			<span></span>
@@ -20,16 +22,60 @@
 		</a>
 		<div id="particles-js"></div>
 	</div>
+	<div class="second-container">
+		<header class="header center">
+			<h3>
+				<a href="https://rajshekhar26.github.io/cleanfolio" class="link">LK</a>
+			</h3>
+			<nav class="center nav">
+				<ul class="nav__list">
+					<li class="nav__list-item">
+						<button type="button" href="#projects" class="link link--nav">Projects</button>
+					</li>
+					<li class="nav__list-item">
+						<button type="button" href="#skills" class="link link--nav">Skills</button>
+					</li>
+					<li class="nav__list-item">
+						<button type="button" href="#contact" class="link link--nav">Contact</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="about center">
+				<h1>Hi, I am <span class="about__name">John Smith.</span></h1>
+				<h2 class="about__role">A Front End Engineer.</h2>
+				<p class="about__desc">Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
+					perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi
+					nemo ipsa cumque perspiciatis! Maiores minima consectetur.</p>
+				<div class="about__contact center"></div>
+			</div>
+		</main>
 
+		<div id="skills" class="skills">
+			<h1 class="section-name">Skills</h1>
+		</div>
 
+		<div id="best-projects" class="best-projects">
+			<!-- Contenu de la section "Best Project" -->
+		</div>
 
+		<div id="art" class="art">
+			<!-- Contenu de la section "Art" -->
+		</div>
+	</div>
 
 	<script src="js/app.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
-		particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
-		  console.log('callback - particles.js config loaded');
-		});
+		particlesJS.load(
+			"particles-js",
+			"assets/particlesjs-config.json",
+			function () {
+				console.log("callback - particles.js config loaded");
+			}
+		);
 	</script>
 </body>
+
 </html>
