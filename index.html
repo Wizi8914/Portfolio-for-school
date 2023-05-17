@@ -5,13 +5,17 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"/>
+	<script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous" ></script>
 	<link rel="stylesheet" href="scss/first-ctn.css" />
 	<link rel="stylesheet" href="scss/second-ctn.css" />
 	<title>Loick Konieczny</title>
 </head>
 
 <body>
-	<div style="display: none" class="first-container">
+	<div class="first-container">
 		<p class="line typing-name">loick Konieczny</p>
 		<a onclick="nextPage()" class="next-page-button">
 			<span></span>
@@ -23,46 +27,289 @@
 		<div id="particles-js"></div>
 	</div>
 	<div class="second-container">
-		<header class="header center">
-			<h3>
-				<a href="https://rajshekhar26.github.io/cleanfolio" class="link">LK</a>
-			</h3>
-			<nav class="center nav">
-				<ul class="nav__list">
-					<li class="nav__list-item">
-						<button type="button" href="#projects" class="link link--nav">Projects</button>
+		<div class="body-dark">
+			<header id="top">
+				<a class="icon-border header-title" href="https://rajshekhar26.github.io"
+					>RS</a
+				>
+				<nav>
+					<ul>
+						<li>
+							<a href="#project" class="link">Projects</a>
+						</li>
+						<li>
+							<a href="#stack" class="link">Tech Stack</a>
+						</li>
+						<li>
+							<a href="#contact" class="link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+	
+			<div class="hero">
+				<h1>
+					Hi. I am
+					<span class="hero-name">Raj</span>
+					<span class="hero-name">Shekhar.</span>
+				</h1>
+	
+				<div class="hero-about">
+					<p>
+						I am a full-stack developer. I write clean, efficient code and create
+						beautiful, responsive user interfaces.
+					</p>
+	
+					<a class="resume" href="#contact">
+						<span class="btn">Get in touch</span>
+					</a>
+				</div>
+			</div>
+	
+			<section id="project" class="project">
+				<h2 class="section-title">Projects</h2>
+	
+				<div class="project-container">
+					<img src="./assets/images/muvee.png" alt="muvee" />
+	
+					<div class="project-content">
+						<h3>Muvee</h3>
+						<p>
+							A movie tracking app where users can create an account, log in, and
+							add movies to the watchlist.
+						</p>
+	
+						<ul class="project-skill">
+							<li>JavaScript</li>
+							<li>React.js</li>
+							<li>Redux</li>
+							<li>Jest</li>
+							<li>Cypress</li>
+							<li>Webpack</li>
+							<li>Node.js</li>
+							<li>Express.js</li>
+							<li>MongoDB</li>
+							<li>Redis</li>
+						</ul>
+	
+						<ul class="project-link">
+							<li>
+								<a
+									href="https://github.com/rajshekhar26/muvee"
+									aria-label="Source code"
+									target="_blank"
+									title="source code"
+									rel="noopener"
+									><i class="icon-border fas fa-code"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://muvee.herokuapp.com"
+									aria-label="Preview"
+									target="_blank"
+									title="preview"
+									rel="noopener"
+									><i
+										aria-hidden="true"
+										class="icon-border fas fa-external-link-alt"
+									></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project-container">
+					<img src="./assets/images/cleanfolio.png" alt="cleanfolio" />
+	
+					<div class="project-content">
+						<h3>Cleanfolio</h3>
+						<p>A clean and simple portfolio template for developers.</p>
+	
+						<ul class="project-skill">
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>React.js</li>
+						</ul>
+	
+						<ul class="project-link">
+							<li>
+								<a
+									href="https://github.com/rajshekhar26/cleanfolio"
+									aria-label="Source code"
+									target="_blank"
+									title="source code"
+									rel="noopener"
+									><i class="icon-border fas fa-code"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://rajshekhar26.github.io/cleanfolio"
+									aria-label="Preview"
+									target="_blank"
+									title="preview"
+									rel="noopener"
+									><i
+										aria-hidden="true"
+										class="icon-border fas fa-external-link-alt"
+									></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+	
+				<div class="project-container">
+					<img src="./assets/images/startpage.png" alt="startpage" />
+	
+					<div class="project-content">
+						<h3>Startpage</h3>
+						<p>A minimal startpage for Firefox.</p>
+	
+						<ul class="project-skill">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul>
+	
+						<ul class="project-link">
+							<li>
+								<a
+									href="https://github.com/rajshekhar26/startpage"
+									aria-label="Source code"
+									target="_blank"
+									title="source code"
+									rel="noopener"
+									><i class="icon-border fas fa-code"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://rajshekhar26.github.io/startpage"
+									aria-label="Preview"
+									target="_blank"
+									title="preview"
+									rel="noopener"
+									><i
+										aria-hidden="true"
+										class="icon-border fas fa-external-link-alt"
+									></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+	
+			<section id="stack" class="stack">
+				<h2 class="section-title">Tech Stack</h2>
+				<div class="stack-container">
+					<div class="tech-container">
+						<i class="devicon-html5-plain colored"></i>
+						HTML
+					</div>
+					<div class="tech-container">
+						<i class="devicon-css3-plain colored"></i>
+						CSS
+					</div>
+					<div class="tech-container">
+						<i class="devicon-javascript-plain colored"></i>
+						JavaScript
+					</div>
+					<div class="tech-container">
+						<i class="devicon-react-original colored"></i>
+						React.js
+					</div>
+					<div class="tech-container">
+						<i class="devicon-redux-original colored"></i>
+						Redux
+					</div>
+					<div class="tech-container">
+						<i class="devicon-nextjs-original colored"></i>
+						Next.js
+					</div>
+					<div class="tech-container">
+						<i class="devicon-typescript-plain colored"></i>
+						TypeScript
+					</div>
+					<div class="tech-container">
+						<i class="devicon-nodejs-plain colored"></i>
+						Node.js
+					</div>
+					<div class="tech-container">
+						<i class="devicon-express-original colored"></i>
+						Express.js
+					</div>
+					<div class="tech-container">
+						<i class="devicon-mongodb-plain colored"></i>
+						MongoDB
+					</div>
+					<div class="tech-container">
+						<i class="devicon-git-plain colored"></i>
+						Git
+					</div>
+					<div class="tech-container">
+						<i class="devicon-linux-plain"></i>
+						Linux
+					</div>
+					<div class="tech-container">
+						<i class="devicon-docker-plain colored"></i>
+						Docker
+					</div>
+					<div class="tech-container">
+						<i class="devicon-vim-plain colored"></i>
+						Vim
+					</div>
+				</div>
+			</section>
+	
+			<section id="contact" class="contact">
+				<h2 class="section-title">Get in touch</h2>
+	
+				<ul>
+					<li>
+						<a href="mailto:rjshekhar.official@gmail.com">
+							<span class="btn">
+								<i aria-hidden="true" class="fas icon fa-envelope"></i>Email
+							</span>
+						</a>
 					</li>
-					<li class="nav__list-item">
-						<button type="button" href="#skills" class="link link--nav">Skills</button>
+	
+					<li>
+						<a href="https://github.com/rajshekhar26" aria-label="Github">
+							<span class="btn">
+								<i aria-hidden="true" class="fab icon fa-github"></i>
+								Github
+							</span>
+						</a>
 					</li>
-					<li class="nav__list-item">
-						<button type="button" href="#contact" class="link link--nav">Contact</button>
+	
+					<li>
+						<a
+							href="https://www.linkedin.com/in/rajshekhar26"
+							aria-label="Linkedin"
+						>
+							<span class="btn">
+								<i aria-hidden="true" class="fab icon fa-linkedin"></i>
+								Linkedin
+							</span>
+						</a>
 					</li>
 				</ul>
-			</nav>
-		</header>
-		<main>
-			<div class="about center">
-				<h1>Hi, I am <span class="about__name">John Smith.</span></h1>
-				<h2 class="about__role">A Front End Engineer.</h2>
-				<p class="about__desc">Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
-					perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi
-					nemo ipsa cumque perspiciatis! Maiores minima consectetur.</p>
-				<div class="about__contact center"></div>
+			</section>
+	
+			<footer>
+				<small>&copy; 2021-2023 Raj Shekhar</small>
+			</footer>
+	
+			<div class="scroll-container">
+				<div aria-label="Scroll up" class="scroll-up">
+					<a href="#top">
+						<i aria-hidden="true" class="fas fa-arrow-up"></i>
+					</a>
+				</div>
 			</div>
-		</main>
-
-		<div id="skills" class="skills">
-			<h1 class="section-name">Skills</h1>
-		</div>
-
-		<div id="best-projects" class="best-projects">
-			<!-- Contenu de la section "Best Project" -->
-		</div>
-
-		<div id="art" class="art">
-			<!-- Contenu de la section "Art" -->
-		</div>
 	</div>
 
 	<script src="js/app.js"></script>
