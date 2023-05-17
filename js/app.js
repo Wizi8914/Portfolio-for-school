@@ -10,5 +10,6 @@ function nextPage() {
     monElement.className = 'first-container-fadeOut';
     setTimeout(function() {
         monElement.style.display = 'none';
+        document.body.style.overflow = 'auto'
     }, 2000);
 }
