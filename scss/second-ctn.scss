@@ -139,7 +139,7 @@ a {
 		color: var(--primary-alt);
 	}
 
-	::before {
+	&::before {
 		content: '';
 		display: inline;
 		width: 0%;

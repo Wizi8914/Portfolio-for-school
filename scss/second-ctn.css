@@ -137,7 +137,7 @@ a {
   color: var(--primary-alt);
 }
 
-.link ::before {
+.link::before {
   content: '';
   display: inline;
   width: 0%;
