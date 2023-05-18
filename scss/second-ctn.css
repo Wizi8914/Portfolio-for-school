@@ -129,11 +129,15 @@ a {
   color: var(--primary);
 }
 
+.link:hover::before {
+  width: 100%;
+}
+
 .link:active {
   color: var(--primary-alt);
 }
 
-.link::before {
+.link ::before {
   content: '';
   display: inline;
   width: 0%;
@@ -143,10 +147,6 @@ a {
   background-color: var(--primary);
   -webkit-transition: width 0.2s ease-out;
   transition: width 0.2s ease-out;
-}
-
-.link:hover::before {
-  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -694,51 +694,6 @@ footer small {
   height: 2.2em;
   color: var(--primary);
   border: 0.15em solid var(--primary);
-}
-
-/* icons */
-.scroll-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.scroll-up {
-  display: none;
-  position: fixed;
-  font-size: 0.9rem;
-  bottom: 3em;
-  right: 2em;
-  font-weight: 600;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-
-.scroll-up:active {
-  -webkit-transform: translateY(0.4em);
-          transform: translateY(0.4em);
-}
-
-.scroll-up a {
-  background-color: var(--primary);
-  padding: 0.9em 1.2em;
-  color: var(--bg);
-  border-radius: 50%;
-}
-
-.scroll-up a:hover {
-  background-color: var(--primary-alt);
-}
-
-@media (max-width: 1000px) {
-  .scroll-container {
-    display: none;
-  }
 }
 
 /* ============
